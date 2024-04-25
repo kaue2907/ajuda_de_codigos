@@ -1,0 +1,447 @@
+4
+numero = int(input("Digite um número para ver sua tabuada: "))
+
+# Loop de 1 a 10 para calcular a tabuada do número informado
+for i in range(1, 11):
+    resultado = numero * i
+    print(f"{numero} x {i} = {resultado}")
+
+
+
+5
+numero = int(input("Digite um número para ver sua tabuada: "))
+
+for i in range(1, 11):
+
+print(f"{numero} x {i} = {numero * i}")
+
+
+
+6
+for i in range(1, 21):
+    print(i)
+
+for i in range(1, 21):
+    print(i, end=' ')
+print(
+
+
+7
+for numero in range(1, 51):
+    if numero % 2 != 0:
+        print(numero)
+
+
+8
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+if num1 > num2:
+    num1, num2 = num2, num1
+for i in range(num1 + 1, num2):
+    print(i)
+
+
+9
+def main():
+    faturamento_loja_B = 54000
+    faturamento_total = 0
+
+    for i in range(1, 6):
+        print(f"Cadastro do cliente {i}")
+        valor_compra = float(input("Digite o valor da compra do cliente: R$ "))
+        faturamento_total += valor_compra
+    
+    if faturamento_total > faturamento_loja_B:
+        excesso = faturamento_total - faturamento_loja_B
+        print(f"O faturamento foi superior ao da loja B em R$ {excesso:.2f}")
+    else:
+        print("O faturamento não foi superior ao da loja B.")
+
+if __name__ == "__main__":
+    main()
+
+
+10
+cont_pares = 0
+cont_impares = 0
+
+# Solicitando ao usuário a entrada de 10 números inteiros
+for i in range(10):
+    numero = int(input(f"Digite o {i+1}º número: "))
+    
+    # Verificando se o número é par ou ímpar
+    if numero % 2 == 0:
+        cont_pares += 1
+    else:
+        cont_impares += 1
+
+# Exibindo os resultados
+print("Quantidade de números pares:", cont_pares)
+print("Quantidade de números ímpares:", cont_impares)
+
+
+11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12
+while True:
+    # Tenta executar o bloco de código
+    try:
+        # Solicita uma entrada do usuário e tenta converter para float
+        nota = float(input("Digite uma nota entre 0 e 10: "))
+        # Verifica se a nota está dentro do intervalo válido
+        if 0 <= nota <= 10:
+            print(f"Nota válida: {nota}")
+            break  # Sai do loop se a nota for válida
+        else:
+            # Notifica o usuário se a nota estiver fora do intervalo
+            print("Valor inválido! A nota deve estar entre 0 e 10.")
+    except ValueError:
+        # Notifica o usuário se a entrada não for um número
+        print("Valor inválido! Por favor, digite um número.")
+
+
+
+13
+valor_inicial = 500
+desconto_maximo = 25
+
+print("Valor da compra - Porcentagem de desconto - Valor final")
+
+# Inicializa a variável de desconto
+desconto_percentual = 0
+
+# Loop até que o desconto máximo seja alcançado
+for valor_acima_de_500 in range(0, (desconto_maximo + 1) * 100, 100):
+    valor_da_compra = valor_inicial + valor_acima_de_500
+    desconto_percentual = valor_acima_de_500 // 100
+    if desconto_percentual > desconto_maximo:
+        desconto_percentual = desconto_maximo
+    valor_final = valor_da_compra * (1 - desconto_percentual / 100.0)
+    print(f"{valor_da_compra} - {desconto_percentual}% - R$ {valor_final:.2f}")
+
+
+
+14
+def main():
+    # Contadores para cada faixa etária
+    ate_15 = 0
+    de_16_a_30 = 0
+    de_31_a_45 = 0
+    de_46_a_60 = 0
+    acima_61 = 0
+    
+    # Processamento de idade para 15 pessoas
+    for i in range(15):
+        idade = int(input(f"Digite a idade da pessoa {i+1}: "))
+        
+        if idade <= 15:
+            ate_15 += 1
+        elif 16 <= idade <= 30:
+            de_16_a_30 += 1
+        elif 31 <= idade <= 45:
+            de_31_a_45 += 1
+        elif 46 <= idade <= 60:
+            de_46_a_60 += 1
+        else:
+            acima_61 += 1
+
+    # Total de pessoas
+    total_pessoas = 15
+    
+    # Calculando percentagens
+    perc_ate_15 = (ate_15 / total_pessoas) * 100
+    perc_acima_61 = (acima_61 / total_pessoas) * 100
+    
+    # Exibindo resultados
+    print("\nQuantidade de pessoas por faixa etária:")
+    print(f"Até 15 anos: {ate_15}")
+    print(f"De 16 a 30 anos: {de_16_a_30}")
+    print(f"De 31 a 45 anos: {de_31_a_45}")
+    print(f"De 46 a 60 anos: {de_46_a_60}")
+    print(f"Acima de 61 anos: {acima_61}")
+    
+    print("\nPercentagem de pessoas na primeira e na última faixa etária:")
+    print(f"Até 15 anos: {perc_ate_15:.2f}%")
+    print(f"Acima de 61 anos: {perc_acima_61:.2f}%")
+
+if __name__ == "__main__":
+    main()
+
+
+
+15
+def calcular_potencia(base, expoente):
+    # Inicializa o resultado como 1 (qualquer número elevado a 0 é 1)
+    resultado = 1
+    
+    # Se o expoente é negativo, calcula a potência do inverso da base
+    if expoente < 0:
+        base = 1 / base
+        expoente = -expoente
+    
+    # Multiplica a base por ela mesma o número de vezes indicado pelo expoente
+    for _ in range(expoente):
+        resultado *= base
+    
+    return resultado
+
+def main():
+    # Solicita a base e o expoente ao usuário
+    base = float(input("Digite a base: "))
+    expoente = int(input("Digite o expoente: "))
+    
+    # Calcula a potência
+    resultado = calcular_potencia(base, expoente)
+    
+    # Exibe o resultado
+    print(f"{base} elevado a {expoente} é {resultado}")
+
+# Executa o programa
+if __name__ == "__main__":
+    main()
+
+
+
+16
+def sieve_of_eratosthenes(n):
+    import numpy as np
+    # Criar um array de booleanos, inicialmente marcando todos os números como primos (True)
+    is_prime = np.ones(n + 1, dtype=bool)
+    is_prime[0:2] = False  # Sabemos que 0 e 1 não são primos
+    p = 2
+    num_divisions = 0
+
+    while p * p <= n:
+        if is_prime[p]:
+            for i in range(p * p, n + 1, p):
+                is_prime[i] = False
+                num_divisions += 1
+        p += 1
+
+    # Listar todos os números primos
+    primes = np.nonzero(is_prime)[0]
+    return primes, num_divisions
+
+def main():
+    n = int(input("Digite um número inteiro N para encontrar todos os primos entre 1 e N: "))
+    primes, num_divisions = sieve_of_eratosthenes(n)
+    print(f"Os números primos entre 1 e {n} são: {primes}")
+    print(f"Número de divisões executadas: {num_divisions}")
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

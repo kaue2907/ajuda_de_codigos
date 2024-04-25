@@ -1,0 +1,32 @@
+// C++ code
+//
+int vermelhoPin = 9;
+int amareloPin = 8;
+int verdePin = 7;
+
+
+
+void setup()
+{
+  pinMode(vermelhoPin, OUTPUT);
+  pinMode(amareloPin, OUTPUT);
+  pinMode(verdePin, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(vermelhoPin, HIGH);
+  digitalWrite(amareloPin, LOW);
+  digitalWrite(verdePin, LOW);
+  delay(5000);
+  digitalWrite(vermelhoPin, LOW);
+  digitalWrite(amareloPin, LOW);
+  digitalWrite(verdePin, HIGH);
+  delay(5000);
+  digitalWrite(vermelhoPin, LOW);
+  digitalWrite(amareloPin, HIGH);
+  digitalWrite(verdePin, LOW);
+  delay(2000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}

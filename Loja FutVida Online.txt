@@ -1,0 +1,104 @@
+Loja FutVida Online
+
+VAR
+opcao, total, nome, endereco, sobrenome, cpf, endereço, complemento, numerodacasa : caractere
+idade, telefone : inteiro
+
+INICIO
+escreva ("          Bem Vindo a loja FutVida          ")
+esreva ("selecione a opção")
+escreva ("        O que deseja comprar                ")
+escreva ("        1- camisas                          ")
+escreva ("        2- chuteiras                        ")
+escreva ("        3- meias                            ")
+escreva ("        4- conjuntos de treino              ")
+leia (opcao)
+SE opcao == 2 entao
+chuteiras = 2
+escreva ("selecione o número da chuteira")
+escreva ("        1- 30                              ")
+escreva ("        2- 31                              ")
+escreva ("        3- 32                              ")
+escreva ("        4- 33                              ")
+escreva ("        5- 34                              ")
+escreva ("        6- 35                              ")
+escreva ("        7- 36                              ")
+escreva ("        8- 37                              ")
+escreva ("        9- 38                              ")
+escreva ("       10- 39                              ")
+escreva ("       11- 40                              ")
+escreva ("       12- 41                              ")
+leia (opcao)
+SE opcao == 9 entao
+38 = 9
+escreva ("selecione a marca da chuteira")
+escreva ("     1- Nike                        ")
+escreva ("     2- Adidas                      ")
+escreva ("     3- Puma                        ")
+escreva ("     4- Umbro                       ")
+leia (opcao)
+SE opcao == 1 entao
+nike == 1
+escreva ("selecione o estilo da chteira")
+escreva ("    1- campo                             ")
+escreva ("    2- society                           ")
+escreva ("    3- salão                             ")
+leia (opcao)
+SE opcao == 1 entao
+campo = 1
+escreva ("selecione o modelo da chuteira")
+escreva ("    1- Phantom GX Elite                 ")
+escreva ("    2- Mercurial Superfly               ")
+escreva ("    3- Zoom Superfly                    ")
+leia (opcao)
+SE opcao == 2 entao
+mercurial superfly = 2
+escreva ("selecione a cor")
+escreva ("  1- Preto                              ")
+escreva ("  2- Vermelho                           ")
+escreva ("  3- Laranja                            ")
+escreva ("  4- Amarelo                            ")
+escreva ("  5- Verde                              ")
+escreva ("  6- Azul                               ")
+escreva ("  7- Rosa                               ")
+leia (opcao)
+SE opcao == 6 entao
+azul = 6
+escreva ("você comprou uma chuteira NIKE MERCURIAL SUPERFLY AZUL")
+escreva ("selecione o número do cartão de crédito/débito")
+escreva ("número do cartão")
+leia (numerodocartao)
+escreva ("coloque a data de validade do cartão")
+leia (datadevalidade)
+escreva ("coloque o CVV do cartão")
+leia (cvvdocartao)
+escreva ("coloque seu endereço")
+leia (endereco)
+escreva ("digite o número do complemento")
+leia (numerodocomplemento)
+escreva ("digite seu CPF")
+leia (cpf)
+escreva ("digite o seu telefone")
+leia (telefone)
+total = chueteira + mercurialsuperfly + azul
+valortotal = valorchuteira
+escreva ("valor total")
+escreva ("aceitar compra")
+escreva ("   1- sim          ")
+escreva ("   2- não          ")
+SE opcao = 1 entao 
+sim = 1
+SENAO opcao = 2 entao
+nao = 2
+escreva ("finalizando compra")
+escreva ("você comprou uma chuteira")
+escreva ("prazo de entrega em 30 dias")
+FIM
+
+
+
+
+
+
+
+

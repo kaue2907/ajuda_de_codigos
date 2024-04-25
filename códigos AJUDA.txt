@@ -1,0 +1,27 @@
+maior_numero = 0
+for contador in range(5):
+  numero = int(input("Digite um numero"))
+if numero > maior_numero:
+  maior_numero = numero
+
+print(maior_numero)  
+
+
+
+
+
+for contador in range(1000, 2001):
+  if contador % 11 == 2:
+    print(contador)
+
+
+
+
+
+soma = 0
+for i in range(5):
+  numero = float(input(f"Digite o {i+1} número: "))
+  soma += numero # soma = soma + numero
+  media = soma/5
+
+  print(f"A soma dos números é: {soma} e média é: {i}")

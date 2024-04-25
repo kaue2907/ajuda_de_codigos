@@ -1,0 +1,94 @@
+// C++ code
+//
+int verdePin = 6;
+int amareloPin = 7;
+int azulPin = 8;
+int brancoPin = 9;
+
+void setup()
+{
+  pinMode(verdePin, OUTPUT);
+  pinMode(amareloPin, OUTPUT);
+  pinMode(azulPin, OUTPUT);
+  pinMode(brancoPin, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(verdePin, HIGH);
+  digitalWrite(amareloPin, LOW);
+  digitalWrite(azulPin, LOW);
+  digitalWrite(brancoPin, LOW);
+  delay(2000); 
+  digitalWrite(verdePin, LOW);
+  digitalWrite(amareloPin, HIGH);
+  digitalWrite(azulPin, LOW);
+  digitalWrite(brancoPin, LOW);
+  delay(2000);
+  digitalWrite(verdePin, HIGH);
+  digitalWrite(amareloPin, HIGH);
+  digitalWrite(azulPin, LOW);
+  digitalWrite(brancoPin, LOW);
+  delay(2000);
+  digitalWrite(verdePin, LOW);
+  digitalWrite(amareloPin, LOW);
+  digitalWrite(azulPin, HIGH);
+  digitalWrite(brancoPin, LOW);
+  delay(2000); 
+  digitalWrite(verdePin, HIGH);
+  digitalWrite(amareloPin, LOW);
+  digitalWrite(azulPin, HIGH);
+  digitalWrite(brancoPin, LOW);
+  delay(2000);
+  digitalWrite(verdePin, LOW);
+  digitalWrite(amareloPin, HIGH);
+  digitalWrite(azulPin, HIGH);
+  digitalWrite(brancoPin, LOW);
+  delay(2000); 
+  digitalWrite(verdePin, HIGH);
+  digitalWrite(amareloPin, HIGH);
+  digitalWrite(azulPin, HIGH);
+  digitalWrite(brancoPin, LOW);
+  delay(2000); 
+  digitalWrite(verdePin, LOW);
+  digitalWrite(amareloPin, LOW);
+  digitalWrite(azulPin, LOW);
+  digitalWrite(brancoPin, HIGH);
+  delay(2000); 
+  digitalWrite(verdePin, HIGH);
+  digitalWrite(amareloPin, LOW);
+  digitalWrite(azulPin, LOW);
+  digitalWrite(brancoPin, HIGH);
+  delay(2000); 
+  digitalWrite(verdePin, LOW);
+  digitalWrite(amareloPin, HIGH);
+  digitalWrite(azulPin, LOW);
+  digitalWrite(brancoPin, HIGH);
+  delay(2000);
+  digitalWrite(verdePin, HIGH);
+  digitalWrite(amareloPin, HIGH);
+  digitalWrite(azulPin, LOW);
+  digitalWrite(brancoPin, HIGH);
+  delay(2000);
+  digitalWrite(verdePin, LOW);
+  digitalWrite(amareloPin, LOW);
+  digitalWrite(azulPin, HIGH);
+  digitalWrite(brancoPin, HIGH);
+  delay(2000);
+  digitalWrite(verdePin, HIGH);
+  digitalWrite(amareloPin, LOW);
+  digitalWrite(azulPin, HIGH);
+  digitalWrite(brancoPin, HIGH);
+  delay(2000);
+  digitalWrite(verdePin, LOW);
+  digitalWrite(amareloPin, HIGH);
+  digitalWrite(azulPin, HIGH);
+  digitalWrite(brancoPin, HIGH);
+  delay(2000);
+  digitalWrite(verdePin, HIGH);
+  digitalWrite(amareloPin, HIGH);
+  digitalWrite(azulPin, HIGH);
+  digitalWrite(brancoPin, HIGH);
+  delay(2000); 
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
